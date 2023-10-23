@@ -150,15 +150,18 @@ flex-wrap: wrap;
 .btn {
     align-items: flex-start
 }
+
 .carousel {
-    display: flex;
-    margin-bottom: 237px;
-    justify-content: space-around;
-    
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 362px);
+    justify-content: center;
+    padding-top: 264px;
+    padding-bottom: 243px;
 }
 
 .itm {
-    display: flex;
+    display: grid;
     width: 362px;
     height: 389px;
     flex-shrink: 0;
@@ -167,6 +170,7 @@ flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    padding: 30px;
 }
 
 .img {
@@ -199,4 +203,19 @@ flex-wrap: wrap;
     line-height: 160%; /* 25.6px */
     opacity: 0.7;
     width: 302px;
+}
+
+.itm_big {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 754px;
+    height: 808px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #132035;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+
 }
